@@ -1,9 +1,9 @@
 {
-    "pages": ["pages/index/index"],
+    "pages": ["pages/hello2/hello2","pages/index/index","pages/hello/hello"],
     "window": {
       "backgroundTextStyle": "light",
       "navigationBarBackgroundColor": "#fff",
       "navigationBarTitleText": "furniture-shop",
       "navigationBarTextStyle": "black"
     }
-  }
+}

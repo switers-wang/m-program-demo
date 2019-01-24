@@ -1,0 +1,3 @@
+<template name="t1">
+    <view>序号是{{num}}，奇数行</view>
+</template>

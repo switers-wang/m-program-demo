@@ -7,6 +7,7 @@ Page({
   data: {
     time: '',
     five: 5,
+    numberList: [1,2,3,4,5],
     list: ['周杰伦', '林俊杰', '文章', '古天乐', 'ttamm']
   },
 
@@ -15,7 +16,7 @@ Page({
     this.setData({
       time,
     });
-    setTimeout(this.showTime, 900);
+    setTimeout(this.showTime, 500);
   },
 
   /**

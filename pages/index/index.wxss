@@ -2,3 +2,6 @@
 .bold {
     font-weight: bold;
 }
+.container {
+    padding: 5rpx 10rpx;
+}

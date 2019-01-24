@@ -19,7 +19,7 @@
         </view>
       </view>
       <view style="flex-direction:column">
-        <text class="bold">模版引用【复用】：</text>
+        <text class="bold">模版引用【复用】：注意include和import区别</text>
         <view style="flex-direction:column">
           <block wx:for="{{numberList}}" >
             <template is="t{{(index + 1) % 2 !== 0 ? '1' : '2'}}" data="{{num: item}}"></template>

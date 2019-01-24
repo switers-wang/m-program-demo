@@ -1,11 +1,23 @@
 // pages/index/index.js
+import moment from 'moment';
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    time: '',
+    five: 5,
+    list: ['周杰伦', '林俊杰', '文章', '古天乐', 'ttamm']
+  },
+  showTime: () => {
+    for(;;) {
+      setTimeout(() => {
+        const time = moment().format('YYYY-MM-DD');
+        this.setData({
+          time,
+        });
+      }, 900);
+    }
   },
 
   /**

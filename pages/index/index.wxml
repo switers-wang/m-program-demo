@@ -1,5 +1,19 @@
 <view class="container">
-  <view class="userinfo">
-      <text class="begin">{{'大家好，我是郭伊伊'}}</text>    
+  <view style="flex-direction:column">
+      <text class="bold">基本数据渲染：</text>
+      <view>{{'hello world'}}</view>
+      <view>timer is {{time}}</view>
+      <view>
+        <text class="bold">条件渲染：</text>
+        <text wx:if="{{five>5}}">1</text>
+        <text wx:elif="{{five === 5}}">2</text>
+        <text wx:else>3</text>
+      </view>
+      <view>
+        <text class="bold">列表渲染：</text>
+        <view wx:for="{{list}}" style="flex-direction:column">
+          <text wx:key="item" >{{index}}: {{item}}</text>
+        </view>
+      </view>
   </view>
 </view>

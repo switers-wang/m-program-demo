@@ -1,4 +1,4 @@
 /* pages/index/index.wxss */
-.begin {
-    color: red;
+.bold {
+    font-weight: bold;
 }

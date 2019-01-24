@@ -1,5 +1,5 @@
 // pages/index/index.js
-import moment from 'moment';
+const moment = require('moment');
 Page({
   /**
    * 页面的初始数据
@@ -9,29 +9,26 @@ Page({
     five: 5,
     list: ['周杰伦', '林俊杰', '文章', '古天乐', 'ttamm']
   },
-  showTime: () => {
-    for(;;) {
-      setTimeout(() => {
-        const time = moment().format('YYYY-MM-DD');
-        this.setData({
-          time,
-        });
-      }, 900);
-    }
+
+  showTime: function () {
+    const time = moment().format('hh:mm:ss');
+    this.setData({
+      time,
+    });
+    setTimeout(this.showTime, 900);
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.showTime();    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**

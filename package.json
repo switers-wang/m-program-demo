@@ -1,0 +1,23 @@
+{
+  "name": "m-program-demo",
+  "version": "1.0.0",
+  "description": "家具商城",
+  "main": "app.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/switers-wang/m-program-demo.git"
+  },
+  "author": "wangxupeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/switers-wang/m-program-demo/issues"
+  },
+  "homepage": "https://github.com/switers-wang/m-program-demo#readme"
+}

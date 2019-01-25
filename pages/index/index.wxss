@@ -2,6 +2,9 @@
 .bold {
     font-weight: bold;
 }
+.button-hover {
+    background-color: #ccc;
+}
 .container {
     padding: 5rpx 10rpx;
 }

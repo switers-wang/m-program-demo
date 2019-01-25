@@ -57,14 +57,23 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log('我下拉了');
+    wx.stopPullDownRefresh();
+  },
+  clickFun: function (e) {
+    console.log(e);
+    const a =e.target.dataset.a;
+    wx.showToast({
+      title: a,
+    });
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log(1);
+    
   },
 
   /**

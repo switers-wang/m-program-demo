@@ -26,5 +26,9 @@
           </block>
         </view>
       </view>
+      <view style="flex-direction:column">
+        <text class="bold">事件绑定</text>
+        <button data-a="我好帅" bind:tap="clickFun" hover-class="button-hover">点击我一下，我会传值：“我好帅”出去</button>
+      </view>
   </view>
 </view>

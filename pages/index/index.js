@@ -32,6 +32,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('路径是', this.route);
     this.showTime();    
   },
 
@@ -81,7 +82,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(1);
+    console.log('我被上拉了');
     
   },
 

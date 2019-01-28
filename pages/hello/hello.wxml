@@ -1,2 +1,1 @@
-<!--pages/hello/hello.wxml-->
-<text>pages/hello/hello.wxml</text>
+<text class="hello-page-wrapper">这是 的 hello 页面</text>

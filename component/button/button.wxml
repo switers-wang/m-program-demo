@@ -1,0 +1,3 @@
+<view class="button-wrapper" bind:tap="testClick">
+    <text style="color: {{color}}">{{text}}</text>
+</view>

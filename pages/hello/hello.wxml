@@ -1,3 +1,2 @@
-<view>
-    <text>这是页面2</text>
-</view>
+<!--pages/hello/hello.wxml-->
+<text>pages/hello/hello.wxml</text>

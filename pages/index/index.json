@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "my-self-button": "../../component/button/button"
+  },
   "onReachBottomDistance": 100,
   "enablePullDownRefresh": true
 }

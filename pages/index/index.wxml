@@ -34,5 +34,14 @@
         <text class="bold">自定义组件</text>
         <my-self-button text="点击一下" clickFun="{{componentClick}}"></my-self-button>
       </view>
+      <view id="cur-dom" style="flex-direction:column">
+        <text class="bold">查询dom</text>
+        <view> 离顶部的距离{{position.top}} | 距离底部距离{{position.bottom}}</view>
+        <view> 滚动了 {{scrollTop}}</view>
+      </view>
+      <view style="flex-direction:column">
+        <text class="bold">使用第三方npm包</text>
+        <van-rate value="4"></van-rate>
+      </view>
   </view>
 </view>

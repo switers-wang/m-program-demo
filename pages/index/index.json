@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "my-self-button": "../../component/button/button"
+    "my-self-button": "../../component/button/button",
+    "van-rate": "../../miniprogram_npm/vant-weapp/rate/index"
   },
   "onReachBottomDistance": 100,
   "enablePullDownRefresh": true

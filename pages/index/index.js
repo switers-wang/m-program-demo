@@ -16,6 +16,11 @@ Page({
         icon: 'none',
       });
     },
+    position: {
+      top: 0,
+      bottom: 0,
+    },
+    scrollTop: 0,
   },
 
   showTime: function () {
@@ -47,6 +52,29 @@ Page({
    */
   onShow: function () {
 
+  },
+
+  onPageScroll: function () {
+    const query = this.createSelectorQuery();
+    const $dom = query.select('#cur-dom');
+    const _this = this;
+    $dom.boundingClientRect(function (res) {
+      _this.setData({
+        position: {
+          ..._this.data,
+          top: res.top,
+          bottom: res.bottom,
+        }
+      });
+      console.log(res);
+    });
+    query.selectViewport().scrollOffset(function (res) {
+      console.log('滚动信息', res);
+      _this.setData({
+        scrollTop: res.scrollTop,
+      });
+    });
+    query.exec();
   },
 
   /**

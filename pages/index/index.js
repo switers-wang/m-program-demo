@@ -8,7 +8,7 @@ Page({
     time: '',
     five: 5,
     numberList: [1,2,3,4,5],
-    list: ['周杰伦', '林俊杰', '文章', '古天乐', 'ttamm'],
+    list: ['react', 'vue', 'angular', 'jquery', 'bs'],
     componentClick: function (t) {
       console.log('组件被点击,并且组件传出了{' + t + '}参数');
       wx.showToast({
